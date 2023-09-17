@@ -1,0 +1,3 @@
+student:
+  provider:
+    url: http://localhost:1000//api/v1/student
