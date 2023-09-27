@@ -28,4 +28,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:9001/eureka
 server:
-  port: 2001
+  port: 3000
