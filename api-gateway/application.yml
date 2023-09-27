@@ -1,8 +1,0 @@
-student:
-  provider:
-    url: http://localhost:1000//api/v1/student
-
-course:
-  provider:
-    url:
-      courseId: http://localhost:2000/api/v1/course/id/
