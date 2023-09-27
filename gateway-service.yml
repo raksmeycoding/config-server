@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: TASK-SERVICE
+    name: GATEWAY-SERVICE
   datasource:
     url: jdbc:postgresql://34.124.162.41/miniproject2
     username: user
