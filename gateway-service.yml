@@ -1,6 +1,6 @@
 spring:
   application:
-    name: SPRING-CLOUD-API-GATEWAY
+    name: GATEWAY-SERVICE
   cloud:
     gateway:
       discovery:
