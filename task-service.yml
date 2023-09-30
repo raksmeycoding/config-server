@@ -1,4 +1,3 @@
-
 spring:
   application:
     name: TASK-SERVICE
@@ -14,6 +13,25 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://keycloak.domrra.site/auth/realms/mini-project-2-realm
+          jwk-set-uri: https://keycloak.domrra.site/auth/realms/mini-project-2-realm/protocol/openid-connect/certs
+keycloak:
+  realm: mini-project-2-realm
+  resource: mini-project-2-client
+  auth-server-url: https://keycloak.domrra.site/auth/ #docker container
+  credentials:
+    username: 'admin'
+    password: 'admin'
+    client-id: 'mini-project-2-client'
+    secret: 'LdBQdeV2CO3uUdiSi0CbZkU0rA9gAibQ'
+    provider: secret
+logging:
+  level:
+    org.springframework.web: debug
 
 
 
