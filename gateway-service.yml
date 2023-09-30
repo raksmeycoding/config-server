@@ -8,10 +8,17 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        uri: lb://TASK-SERVICE
-        predicates:
-          - Path=/api/v1/task/**
-          - Method=GET,POST,PUT,DELETE
+        - id: TASK-SERVICE
+          uri: lb://TASK-SERVICE
+          predicates:
+            - Path=/api/v1/task/**
+            - Method=GET,POST,PUT,DELETE
+        - id: KEYCLOAK-ADMIN-CLIENT
+          uri: lb//KEYCLOAK-ADMIN-CLIENT
+          predicates:
+            - Path=/api/v1/user/**
+            - Method=GET,POST,PUT,DELETE
+
 server:
   port: 9002
 eureka:
