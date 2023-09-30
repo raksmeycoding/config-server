@@ -14,7 +14,7 @@ spring:
             - Path=/api/v1/task/**
             - Method=GET,POST,PUT,DELETE
         - id: KEYCLOAK-ADMIN-CLIENT
-          uri: lb//KEYCLOAK-ADMIN-CLIENT
+          uri: lb://KEYCLOAK-ADMIN-CLIENT
           predicates:
             - Path=/api/v1/user/**
             - Method=GET,POST,PUT,DELETE
