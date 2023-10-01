@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: GATEWAY-SERVICE
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: TASK-SERVICE
+          uri: lb://TASK-SERVICE
+          predicates:
+            - Path=/api/v1/task/**
+            - Method=GET,POST,PUT,DELETE
+        - id: KEYCLOAK-ADMIN-CLIENT
+          uri: lb://KEYCLOAK-ADMIN-CLIENT
+          predicates:
+            - Path=/api/v1/**
+            - Method=GET,POST,PUT,DELETE
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+    enable: true
+
+server:
+  port: 9002
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway:
+            handler:
+              routePredicateHandlerMapping: DEBUG
+
+
+
+
+
