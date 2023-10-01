@@ -18,6 +18,9 @@ spring:
           predicates:
             - Path=/api/v1/**
             - Method=GET,POST,PUT,DELETE
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+    enable: true
 
 server:
   port: 9002
