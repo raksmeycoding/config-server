@@ -8,7 +8,7 @@ spring:
   #          issuer-uri: http://localhost:9900/auth/realms/mini-project-2-realm
   #          jwk-set-uri: http://localhost:9900/auth/realms/mini-project-2-realm/protocol/openid-connect/certs
   application:
-    name: KEYCLOAK-ADMIN-CLIENT
+    name: KEYCLOAK-SERVICE
   zipkin:
     base-url: http://127.0.0.1:9411/
     enable: true
