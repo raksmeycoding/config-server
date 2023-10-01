@@ -2,7 +2,7 @@ spring:
   application:
     name: SERVICE-REGISTRY # provider the service's name and name must be unique
   zipkin:
-    base-url: http://127.0.0.1:9411/
+    base-url: http://34.124.162.41:9411/
     enable: true
 
 server:

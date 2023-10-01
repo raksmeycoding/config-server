@@ -20,7 +20,7 @@ spring:
           issuer-uri: https://keycloak.domrra.site/auth/realms/mini-project-2-realm
           jwk-set-uri: https://keycloak.domrra.site/auth/realms/mini-project-2-realm/protocol/openid-connect/certs
   zipkin:
-    base-url: http://127.0.0.1:9411/
+    base-url: http://34.124.162.41:9411/
     enable: true
 keycloak:
   realm: mini-project-2-realm
@@ -32,6 +32,10 @@ keycloak:
     client-id: 'mini-project-2-client'
     secret: 'LdBQdeV2CO3uUdiSi0CbZkU0rA9gAibQ'
     provider: secret
+  provider:
+    url:
+      getUserById: http://localhost:9002/keycloak-service/api/v1/user/
+      getGroupById: http://localhost:9002/keycloak-service/api/v1/groups/
 logging:
   level:
     org.springframework.web: debug

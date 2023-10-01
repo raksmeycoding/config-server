@@ -19,7 +19,7 @@ spring:
             - Path=/api/v1/**
             - Method=GET,POST,PUT,DELETE
   zipkin:
-    base-url: http://127.0.0.1:9411/
+    base-url: http://34.124.162.41:9411/
     enable: true
 
 server:
