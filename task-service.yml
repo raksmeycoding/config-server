@@ -2,7 +2,7 @@ spring:
   application:
     name: TASK-SERVICE
   datasource:
-    url: jdbc:postgresql://34.124.162.41/miniproject2
+    url: jdbc:postgresql://34.124.162.41:5433/miniproject2
     username: user
     password: 1111
   jpa:
