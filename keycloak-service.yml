@@ -10,7 +10,7 @@ spring:
   application:
     name: KEYCLOAK-SERVICE
   zipkin:
-    base-url: http://34.124.162.41:9411/
+    base-url: http://34.124.162.41:9412/
     enable: true
 server:
   port: 8080

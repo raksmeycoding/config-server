@@ -20,7 +20,7 @@ spring:
           issuer-uri: https://keycloak.domrra.site/auth/realms/mini-project-2-realm
           jwk-set-uri: https://keycloak.domrra.site/auth/realms/mini-project-2-realm/protocol/openid-connect/certs
   zipkin:
-    base-url: http://34.124.162.41:9411/
+    base-url: http://34.124.162.41:9412/
     enable: true
 keycloak:
   realm: mini-project-2-realm
